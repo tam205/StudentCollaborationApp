@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Student Collaboration App</string>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+    <string name="default_web_client_id">219688058111-nr4kd0vacn0fubs1a6sfupjqlmrfp3f4.apps.googleusercontent.com</string>
+</resources>

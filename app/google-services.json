@@ -1,0 +1,34 @@
+{
+  "project_info": {
+    "project_number": "219688058111",
+    "project_id": "student-collaboration-app",
+    "storage_bucket": "student-collaboration-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219688058111:android:e33bdd03d03139fb24a0ca",
+        "android_client_info": {
+          "package_name": "com.example.studentcollaborationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219688058111-nr4kd0vacn0fubs1a6sfupjqlmrfp3f4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu2B0HrZo_xWv9Jl0nFleaqBSMmRUamyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
