@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven "maven3"
-        jdk "OracleJDK8"
+        maven 'maven3'  // Ensure this matches the name configured in Jenkins
+        jdk 'OracleJDK21'  // Change to match your actual JDK installation
     }
 
     environment {
@@ -15,7 +15,7 @@ pipeline {
         NEXUS_GRP_REPO = 'StudentCollaborationApp-grp-repo'
         NEXUS_IP = '192.168.33.20'
         NEXUS_PORT = '8081'
-        NEXUS_LOGIN = "nexuslogin"  // make sure this is correct
+        NEXUS_LOGIN = "nexuslogin"
         SONARSERVER = 'sonarserver'
         SONARSCANNER = 'sonarscanner'
     }
@@ -53,7 +53,7 @@ pipeline {
                     nexusUrl: "${NEXUS_IP}:${NEXUS_PORT}",
                     groupId: 'MobileGroup',
                     version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
-                    repository: "${RELEASE_REPO}",  // I replaced "tam205" with the environment variable
+                    repository: "${RELEASE_REPO}",
                     credentialsId: "${NEXUS_LOGIN}",
                     artifacts: [
                         [artifactId: 'STUDENTCOLLABORATIONAPP-MAIN',
